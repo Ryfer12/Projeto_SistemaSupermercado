@@ -1,7 +1,7 @@
 from datetime import timedelta
 import time
 
-produtos = ['banana', 'maçã', 'ovo', 'laranja', 'arroz', 'melancia', 'feijão', 'alface', 'tomate', 'cenoura', 'pepino', 'batata', 'cebola', 'azeitona', 'pão', 'queijo', 'carne', 'frango', 'peixe', 'camarão', 'presunto', 'mortadela', 'leite']
+produtos = ['banana', 'maçã', 'ovo', 'laranja', 'arroz', 'melancia', 'feijão', 'alface', 'tomate', 'cenoura', 'pepino', 'batata', 'cebola', 'azeitona', 'pão', 'queijo', 'carne', 'frango', 'peixe', 'camarão', 'presunto', 'mortadela', 'leite', 'sal', 'chocolate', 'pimentão']
 
 carrinho = []
 
@@ -32,7 +32,7 @@ def mercado():
     print()
     esc_cli = input(':')
     print()
-      # COMPRA - FEITO
+      # COMPRA
     if esc_cli == '1' or esc_cli.lower() == 'comprar':
       print('Vamos ás compras!')
       time.sleep(1)
@@ -43,13 +43,13 @@ def mercado():
         carrinho.append(compra)
       else:
         print('Não temos esse produto!')
-      # LISTA DE PRODUTOS - FEITO
+      # LISTA DE PRODUTOS
     elif esc_cli == '2' or esc_cli.lower() == 'ver produtos':
       print('Vamos ver os produtos!')
       time.sleep(1)
       print()
       print(produtos)
-       # CARRINHO - FEITO
+       # CARRINHO
     elif esc_cli == '3' or esc_cli.lower() == 'ver carrinho':
       print('No carrinho temos:')
       time.sleep(1)
@@ -90,11 +90,11 @@ def mercado():
         print()
         print('Caixa: Obrigado por comprar conosco!')
         break
-      # SAIR - FEITO
+      # SAIR 
     elif esc_cli == '5' or esc_cli.lower() == 'sair':
       print('Adeus, até a próxima!')
       break
-      # ERRO - FEITO
+      # ERRO 
     else:
        print('Não entendi, por favor tente novamente.')
        mercado()
